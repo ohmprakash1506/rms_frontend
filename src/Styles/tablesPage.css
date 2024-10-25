@@ -1,0 +1,239 @@
+.tablesBody {
+    margin: 0em auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 10%), 0 2px 4px -1px rgb(0 0 0 / 6%);
+    width: 90%;
+}
+
+.tablePageHeader {
+    padding: 0.05em 0em 1em 1em;
+    background-image: linear-gradient(195deg, #ec407a, #d81b60);
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, .14), 0 7px 10px -5px rgba(233, 30, 99, .4);
+    border-radius: 10px;
+    color: white;
+    width: 80%;
+    top: -2em
+}
+
+.tablePageHeader>h2 {
+    font-size: 2rem;
+}
+
+@media (min-width:1100px) {
+    .tablesBody {
+        margin: 0em 3em;
+    }
+
+}
+
+
+.tablesBody>div:nth-of-type(2) {
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.tableImage {
+    width: 40px;
+    aspect-ratio: 1/1;
+    border-radius: 20%;
+}
+
+.colorgreyLight {
+    color: rgb(175, 175, 175)
+}
+
+.colorgrey {
+    color: grey;
+}
+
+.onOffline {
+    margin-top: 0.6em;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+    width: 70px;
+    padding: 0em 1em;
+}
+
+.edit-btn {
+    background-image: linear-gradient(195deg, #ec407a, #d81b60);
+    color: white;
+}
+
+.edit-btn:hover {
+    color: white;
+}
+
+.addBtn {
+    right: 3em;
+    top: 1em;
+    color: #d81b60;
+    background-color: white;
+}
+
+.dialogAddBox {
+    top: 0em;
+    right: 0em;
+    left: 0em;
+    z-index: 100;
+}
+
+.dialogAddBox::backdrop {
+    background: rgb(0 0 0 / 0.4);
+}
+
+@media (min-width:550px) {
+    .dialogAddBox {
+        width: 50%;
+        margin-top: 3em;
+    }
+
+}
+
+
+.closeBoxBtn {
+    right: 2em;
+    color: grey;
+    cursor: pointer;
+}
+
+.deleteDialogBox {
+    border: none;
+    border-radius: 5px;
+}
+
+.deleteDialogBox strong {
+    cursor: pointer;
+}
+
+.deleteDialogBox::backdrop {
+    background: rgb(0 0 0 / 0.4);
+}
+
+@media (max-width:400px) {
+    .addBtn {
+        right: 1em;
+    }
+}
+
+@media (min-width:1200px) {
+    .dialogAddBox {
+        overflow: auto;
+    }
+
+    table {
+        width: 1000px;
+        overflow-x: auto;
+    }
+}
+
+
+.searchBox {
+    color: black;
+    width: 50%;
+    margin: 0em 0em 0em auto;
+    top: 4em;
+}
+
+.searchBox input {
+    outline: none;
+}
+
+#addResource {
+    width: 40%;
+    padding: 1em 4em;
+    border-radius: 10px;
+}
+
+#addResource::backdrop {
+    background: rgb(0 0 0 / 0.4);
+}
+
+#addResource label {
+    color: grey;
+}
+
+#addResource h2>span {
+    right: 0em;
+    top: -0.5em;
+    color: grey;
+    cursor: pointer;
+}
+
+#addResource button {
+    background-image: linear-gradient(195deg, #ec407a, #d81b60);
+    color: white;
+    margin: 1em 0em;
+}
+
+.projectSelect {
+    cursor: pointer;
+}
+
+.projectSelect:hover {
+    background-color: rgb(226, 226, 226);
+}
+
+.projectDetailsHeader>button {
+    background-image: linear-gradient(195deg, #ec407a, #d81b60);
+    display: block;
+    margin: 1em 0em 1em auto;
+    color: white;
+}
+
+.projectDetailsHeaderDetails {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 30px rgb(233, 233, 233);
+    border-radius: 10px;
+}
+
+@media (min-width:550px) {
+    .projectDetailsHeaderDetails {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1000px) {
+    .projectDetailsHeaderDetails {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.projectDetailsHeaderDetails div {
+    padding: 1em 0em;
+    font-weight: bold;
+    color: grey;
+}
+
+.projectDetailsHeaderDetails span {
+    display: block;
+    font-weight: 500;
+    color: rgb(190, 190, 190);
+}
+
+.projectDetailsBottom {
+    margin-top: 3em;
+}
+
+.projectResourceDetails {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.projectResourceDetails p {
+    padding: 1em;
+    margin: 0.5em 2em;
+    text-align: center;
+}
+
+.projectResourceBudget {
+    position: absolute;
+    right: 3em;
+    color: green;;
+}

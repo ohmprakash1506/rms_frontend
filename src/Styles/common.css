@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap');
+
+body {
+    background-color: white;
+    padding: 0em 1em;
+    color: #404040;
+    font-family: Mulish;
+}
+
+
+@media (min-width:1200px) {
+    body {
+        padding: 0em;
+        margin: 0em;
+    }
+}

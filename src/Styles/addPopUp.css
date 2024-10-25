@@ -1,0 +1,93 @@
+.dialogAddBox {
+    top: 0em;
+    right: 0em;
+    left: 0em;
+    z-index: 100;
+}
+
+.dialogAddBox::backdrop {
+    background: rgb(0 0 0 / 0.4);
+}
+
+.addButton {
+    background-color: #5E47D3;
+    color: white !important;
+}
+
+@media (min-width:550px) {
+    .dialogAddBox {
+        width: 50%;
+        max-height: max-content;
+        margin-top: 3em;
+    }
+
+}
+
+
+@media (min-width:1200px) {
+    .dialogAddBox {
+        overflow: auto;
+    }
+
+}
+
+.closeBoxBtn {
+    right: 2em;
+    color: grey;
+    cursor: pointer;
+}
+
+label {
+    color: #404040;
+    font-family: Mulish;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+textarea {
+    resize: none;
+}
+
+.projectBudgetHeader {
+    background-color: #5E47D3;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.projectBudgetHeader>label {
+    color: white;
+    width: calc(100% / 7);
+    text-align: center;
+}
+
+.projectBudgetBody>input {
+    width: calc(100% / 6);
+    border: none;
+    outline: none;
+    border-left: 1px solid #E6E6E6;
+}
+
+.projectBudgetBody:nth-of-type(2n)>input {
+    background-color: #F9F9F9;
+}
+
+.projectBudgetBody:last-of-type {
+    border-bottom: 1px solid #E6E6E6;
+}
+
+.projectBudgetHeader>button {
+    background-color: #ffffff;
+    color: #5E47D3 !important;
+}
+
+.projectBudgetBody>button {
+    background-color: #5E47D3;
+    color: #ffffff !important;
+}

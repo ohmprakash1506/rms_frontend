@@ -1,0 +1,95 @@
+.rightImage {
+    background-color: #5E47D3;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.rightImage img:first-child {
+    background-color: white;
+}
+
+.rightImage img:last-child {
+    width: 80%;
+    aspect-ratio: 1/1;
+    margin: 0em auto;
+}
+
+@media (min-width:768px) {
+    .signInBackground div {
+        width: 50%;
+    }
+
+    .showPwd {
+        left: 90%;
+        top: 100%;
+    }
+}
+
+
+.signInBackground {
+    top: 0em;
+    left: 0em;
+    right: 0em;
+    bottom: 0em;
+}
+
+.resetPwd {
+    color: #5E47D3;
+    cursor: pointer;
+}
+
+.resetPwd:hover {
+    text-decoration: none;
+}
+
+
+.signInLogo {
+    width: 80px;
+    left: 5em;
+    top: 3em;
+}
+
+.signInPage form {
+    width: 80%;
+}
+
+.signInPage form input {
+    width: 100%;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    background-color: white;
+    outline: none;
+    color: #404040;
+
+}
+
+.signInPage form input::placeholder {
+    color: #737373;
+}
+
+.showPwd {
+    right: 5%;
+    top: 40%;
+    cursor: pointer;
+}
+
+.signInPage form button {
+    color: white;
+    background-color: #5E47D3;
+    width: 100%;
+    border-radius: 10px;
+    opacity: 0.5;
+    transition: opacity 500ms ease-in-out;
+}
+
+.signInPage form button:hover {
+    opacity: 1;
+    color: white;
+}
+
+.forgotPwd h3 {
+    color: #5E47D3;
+    font-weight: 700;
+}
